@@ -1,33 +1,6 @@
+@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap";
+
 @import "app/sass/base/index";
+@import "app/sass/modules/index";
 
 
-
-body {
-	background: yellow;
-	overflow: hidden;
-}
-
-p {
-	float: right;
-	padding: 20px;
-	color: blue;
-	font: 700 25px serif;
-	border: 2px solid #fff;
-}
-
-span {
-	float: left;
-	display: block;
-	position: relative;
-	top: 120px;
-  border: 2px solid #ffffff;
-	transform: rotate(90deg);
-	text-transform: uppercase;
-
-}
-
-h1 {
-	font: 700 48px sans-serif;
-	text-align: center;
-	color: red;
-}
