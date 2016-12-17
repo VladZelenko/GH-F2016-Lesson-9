@@ -1,6 +1,74 @@
-.hero {
+.intro {
+	.wrapper {
+		
+	}
+}
+.intro {
 	display: table;
 	width: 100%;
-	background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/hero.png") center center no-repeat;
+	background: linear-gradient(to top, rgba(0, 19, 25, 0.8), rgba(0, 19, 25, 0.8)), url("../img/hero.png") no-repeat;
 }
 
+
+.top-nav {
+	background: none;
+	border: none;
+}
+// .test li a{
+// 		color: $primary_font_color;
+// 		font: 700 14px Raleway;
+// 		text-transform: uppercase;
+// 	}
+
+.inro-template {
+	display: table;
+	width: 100%;
+	text-align: center;
+
+	h2 {
+		margin: 325px 0 45px 0;
+		color: $primary_font_color;
+		font: 100 60px Raleway;
+
+		span {
+			font: 700 60px Raleway;
+		}
+	}
+
+	p {
+		padding-bottom: 65px;
+		color: $primary_font_color;
+		font: 300 24px ProximaNova;
+	}
+
+	a {
+		margin: 0 auto;
+		display: block;
+		margin-bottom: 95px;
+		width: 185px;
+		height: 50px;
+		color: $primary_font_color;
+		font: 700 14px/50px Raleway;
+		border: 2px solid white;
+		border-radius: 25px;
+		text-decoration: none;
+
+		&:hover {
+			background: $btn_primary_color;
+			transition: all 1s ease-in-out;
+			border: none;
+		}
+	}
+}
+
+.test {
+	background: linear-gradient(none);
+}
+
+.glyphicon-chevron-down {
+	margin: 0 auto;
+	color: red;
+	width: 100px;
+	font-size: 25px;
+	font-weight: 100;
+}

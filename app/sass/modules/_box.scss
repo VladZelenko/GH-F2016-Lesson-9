@@ -1,0 +1,26 @@
+section.box {
+	width: 100%;
+	min-height: 100vh;
+	.wrapper {
+		width: 1400px;
+	}
+
+	h3 {
+		color: $secondary_font_color;
+		font: 200 60px Raleway;
+	}
+
+	p {
+		padding: 70px 0 75px 0;
+		color: $secondary_font_color;
+		font: 400 18px/30px ProximaNova;
+	}
+
+	.item-box-1 {
+		background: #edeff1;
+	}
+
+	.item-box-1, .item-box-2{
+			padding: 165px 0 180px 0;
+	}
+}

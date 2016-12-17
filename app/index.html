@@ -5,82 +5,486 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<section class="hero">
+	<section class="intro">
 		<div class="wrapper">
 			<header class="header">
-				<nav class="navbar">
-					<div class="container-fluid"> <!--Можливо можна було записати цей клас в nav?-->
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-							<h1 class="logo">
-								<a href="./" class="nav-logotype navbar-left">
-									<img src="img/alecto-logo.png" alt="Alecto logotype">
-								</a>
-							</h1>
-						</div>
-						<div class="collapse navbar-collapse" id="myNavbar">
-							<ul class="navbar-nav navbar-right">
-								<li><a href="#">Home</a></li>
-								<li><a href="#">About</a></li>
-								<li><a href="#">Work</a></li>
-								<li><a href="#">Services</a></li>
-								<li><a href="#">blog</a></li>
-								<li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
-							</ul>
-						</div>
+				<nav class="navbar navbar-inverse top-nav">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<h1 class="logo">
+							<a href="#" class="nav-logotype navbar-brand">
+								<img src="img/alecto-logo.png" alt="Alecto logotype">
+							</a>
+						</h1>
 					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Work</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">blog</a></li>
+							<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+
 				</nav>
 			</header>
+
+			<div id="myCarousel" class="carousel slide itro-slide" data-ride="carousel">
+				<ol class="carousel-indicators carousel-radio">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+					<li data-target="#myCarousel" data-slide-to="3"></li>
+					<li data-target="#myCarousel" data-slide-to="4"></li>
+				</ol>
+
+				<div class="carousel-inner" role="listbox">
+					<div class="item active inro-template">
+						<h2><span>Alecto</span> is simple PSD Template</h2>
+						<p>Nam varius accumsan elementum aliquam</p>
+						<a href="#">Learn more</a>
+					</div>
+
+					<div class="item inro-template">
+						<h2><span>Alecto</span> is simple PSD Template</h2>
+						<p>Nam varius accumsan elementum aliquam</p>
+						<a href="#">Learn more</a>
+					</div>
+
+					<div class="item inro-template">
+						<h2><span>Alecto</span> is simple PSD Template</h2>
+						<p>Nam varius accumsan elementum aliquam</p>
+						<a href="#">Learn more</a>
+					</div>
+
+					<div class="item inro-template">
+						<h2><span>Alecto</span> is simple PSD Template</h2>
+						<p>Nam varius accumsan elementum aliquam</p>
+						<a href="#">Learn more</a>
+					</div>
+
+					<div class="item inro-template">
+						<h2><span>Alecto</span> is simple PSD Template</h2>
+						<p>Nam varius accumsan elementum aliquam</p>
+						<a href="#">Learn more</a>
+					</div>
+				</div>
+
+				<a class="left carousel-control" href="#myCarousel"  data-slide="prev">
+					<i class="glyphicon glyphicon-chevron-left" aria-hidden="true"></i>
+				</a>
+				<a class="right carousel-control test" href="#myCarousel"  data-slide="next">
+					<i class="glyphicon glyphicon-chevron-right" aria-hidden="true"></i>
+				</a>
+			</div>
+
+			<a href="#"><i class="glyphicon glyphicon-chevron-down" aria-hidden="true"></i></a>
+		</div>
+	</section>
+	<section class="about">
+		<div class="wrapper">
+			<h3>About us</h3>
+			<hr>
+			<p>
+				Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque.
+			</p>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 ">
+						<div class="about-icon">
+							<!-- Пробував встановити як бекграунд, але так і не вийшло, перечитав не одну статтю, але чомусь повторити не вийшло -->
+							<svg id="rocket-space" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							width="50px" height="50px" viewBox="0 0 611.98 611.98" style="enable-background:new 0 0 611.98 611.98;"
+							xml:space="preserve">
+							<path  d="M85.311,478.813c-21.604,0-39.875,14.307-45.832,33.957l-20.799,68.585c-0.268,0.881-0.402,1.82-0.402,2.797
+							c0,5.286,4.29,9.576,9.576,9.576c0.977,0,1.916-0.153,2.796-0.402l68.585-20.8c19.65-5.956,33.957-24.228,33.957-45.832
+							C133.192,500.245,111.76,478.813,85.311,478.813z M583.277,0c-103.291,0-202.961,4.501-286.81,59.104
+							c-44.204,28.786-80.919,69.083-110.548,114.13c-71.688,4.386-138.416,40.699-180.57,99.785
+							c-5.746,8.063-6.934,18.521-3.16,27.656c3.773,9.155,11.989,15.686,21.757,17.352c25.818,4.348,54.413,15.936,83.275,33
+							c-5.209,19.114-9.461,37.673-12.468,55.045c-1.609,9.192,1.379,18.635,7.987,25.224l77.932,77.912
+							c5.439,5.439,12.755,8.408,20.301,8.408c1.647,0,3.275-0.134,4.922-0.422c17.391-3.007,35.949-7.259,55.063-12.468
+							c17.065,28.901,28.652,57.496,33.019,83.313c1.647,9.768,8.216,17.965,17.353,21.776c3.543,1.455,7.258,2.164,10.975,2.164
+							c5.898,0,11.74-1.819,16.682-5.324c59.066-42.136,95.398-108.882,99.746-180.589c45.047-29.648,85.344-66.345,114.111-110.567
+							c54.564-83.793,59.123-187.619,59.123-286.81C612.006,12.851,599.135,0,583.277,0z M63.056,278.382
+							c25.319-26.009,57.477-44.146,92.468-52.555c-13.215,25.856-24.381,52.287-33.594,78.334
+							C102.088,293.225,82.304,284.434,63.056,278.382z M333.623,548.949c-6.053-19.286-14.844-39.07-25.799-58.894
+							c26.066-9.212,52.498-20.378,78.354-33.612C377.77,491.454,359.633,523.649,333.623,548.949z M504.732,284.166
+							C445.188,375.619,316.77,436.218,210.568,457.86l-56.462-56.442c21.662-106.22,82.26-234.619,173.694-294.164
+							c63.414-41.273,142.801-48.571,226.574-49.643C553.322,141.384,546.006,220.752,504.732,284.166z M410.904,248.983
+							c26.449,0,47.881-21.432,47.881-47.881s-21.432-47.881-47.881-47.881s-47.881,21.432-47.881,47.881
+							S384.455,248.983,410.904,248.983z"/>
+						</svg>
+					</div>
+					<h3 class="item-title">Lorem ipsum</h3>
+					<p>
+						Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque.
+					</p>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 ">
+					<div class="about-icon">
+						<svg id="atom" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						width="50px" height="50px" viewBox="0 0 699.734 699.734" style="enable-background:new 0 0 699.734 699.734;"
+						xml:space="preserve">
+						<path  d="M349.867,306.109c-24.13,0-43.736,19.584-43.736,43.736c0,24.13,19.584,43.736,43.736,43.736
+						s43.736-19.606,43.736-43.736C393.604,325.693,374.02,306.109,349.867,306.109z M590.667,349.846
+						c59.692-66.249,79.691-127.843,54.621-171.623c-17.311-30.185-51.276-45.944-98.707-46.949
+						c-21.529-0.437-45.855,2.12-72.631,7.759C446.257,50.293,401.931,0,349.867,0s-96.39,50.293-124.105,139.055
+						c-84.849-17.704-146.508-4.065-171.338,39.19c-25.048,43.802-5.027,105.352,54.643,171.622
+						C49.375,416.116,29.376,477.71,54.446,521.489c17.945,31.3,53.66,46.949,103.734,46.949c20.24,0,42.927-2.47,67.626-7.693
+						c27.693,88.74,72.019,138.989,124.061,138.989c52.063,0,96.39-50.271,124.083-139.033c24.043,5.027,46.359,7.672,66.358,7.672
+						c50.556,0,87.188-15.89,105.002-46.861C670.358,477.666,650.337,416.095,590.667,349.846z M349.867,65.593
+						c15.344,0,47.714,32.72,69.178,120.542c2.645,10.841,4.634,22.425,6.732,33.878c-0.307-0.175-0.612-0.394-0.918-0.568
+						c-19.562-11.388-40.043-22.185-60.895-32.108c-25.529-12.153-50.621-22.36-75.035-30.731
+						C309.759,90.904,336.381,65.593,349.867,65.593z M111.384,488.879c-7.278-12.721,4.197-55.299,66.031-115.537
+						c6.142-5.988,12.721-11.978,19.497-17.944c0.131,20.502,0.896,40.96,2.426,60.784c2.186,28.087,6.251,54.796,11.213,80.74
+						C149.503,509.381,117.526,499.61,111.384,488.879z M213.063,259.27c-20.546,14.579-39.562,29.595-57.003,44.785
+						c-43.059-48.348-51.037-82.139-44.72-93.199c7.104-12.393,48.217-23.584,128.607-0.962c10.775,3.039,21.879,6.71,33.113,10.688
+						C252.975,232.341,232.844,245.303,213.063,259.27z M349.867,634.098c-15.344,0-47.714-32.72-69.178-120.542
+						c-2.645-10.863-4.634-22.426-6.732-33.9c0.306,0.175,0.612,0.371,0.918,0.546c19.562,11.432,40.042,22.229,60.894,32.13
+						c25.529,12.153,50.621,22.36,75.035,30.731C389.975,608.809,363.354,634.098,349.867,634.098z M391.854,423.548
+						c-13.529,7.891-27.692,15.344-41.987,22.491c-14.294-7.147-28.436-14.601-41.987-22.513
+						c-14.579-8.481-29.201-17.901-43.736-27.715c-0.875-15.169-1.749-30.426-1.749-45.966c0-15.541,0.874-30.753,1.749-45.944
+						c14.535-9.836,29.157-19.256,43.736-27.759c13.529-7.869,27.693-15.322,41.987-22.491c14.295,7.169,28.458,14.622,41.987,22.491
+						c14.579,8.502,29.201,17.923,43.736,27.759c0.874,15.19,1.749,30.425,1.749,45.965c0,15.541-0.875,30.753-1.749,45.966
+						C421.056,405.625,406.434,415.067,391.854,423.548z M588.395,488.879c-7.126,12.306-48.261,23.54-128.607,0.939
+						c-10.776-3.038-21.857-6.71-33.092-10.688c20.043-11.737,40.217-24.699,59.954-38.666c20.546-14.601,39.562-29.594,57.025-44.807
+						C586.711,444.006,594.711,477.797,588.395,488.879z M522.32,326.371c-6.143,5.989-12.721,11.978-19.497,17.944
+						c-0.131-20.523-0.896-40.96-2.426-60.785c-2.186-28.086-6.251-54.817-11.213-80.762c61.025-12.458,92.98-2.667,99.166,8.065
+						C595.629,223.555,584.154,266.154,522.32,326.371z"/>
+					</svg>
+				</div>
+				<h3 class="item-title">Lorem ipsum</h3>
+				<p>
+					Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque.
+				</p>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 ">
+				<div class="about-icon">
+					<svg version="1.1" id="zigzag" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					width="50px" height="50px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+					<path d="M609.678,259.056l-72-162C533.484,87.606,523.998,81,513,81c-12.852,0-23.598,8.964-26.334,20.988l-71.118,312.948
+					L321.984,187.74C317.934,177.912,308.268,171,297,171c-11.142,0-20.7,6.75-24.822,16.38L187.11,385.848l-45.954-91.908
+					C136.746,285.084,127.584,279,117,279c-8.334,0-15.804,3.78-20.736,9.738l-90,107.982C2.358,401.418,0,407.43,0,414
+					c0,14.904,12.096,27,27,27c8.334,0,15.804-3.78,20.736-9.72l63.558-76.267l53.532,107.046C169.254,470.916,178.416,477,189,477
+					c11.142,0,20.7-6.75,24.822-16.38l82.674-192.906l101.538,246.564C402.066,524.088,411.732,531,423,531
+					c12.852,0,23.58-8.982,26.334-20.988l72-316.8l38.988,87.732C564.516,290.394,574.002,297,585,297c14.904,0,27-12.096,27-27
+					C612,266.112,611.172,262.404,609.678,259.056z"/>
+				</svg>
+			</div>
+			<h3 class="item-title">Lorem ipsum</h3>
+			<p>
+				Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque.
+			</p>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 ">
+			<div class="about-icon">
+				<svg id="graduation" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				width="50px" height="50px" viewBox="0 0 31.725 31.725" style="enable-background:new 0 0 31.725 31.725;"
+				xml:space="preserve">
+				<path d="M30.611,18.54v-3.817c0.708-0.605,1.113-1.479,1.113-2.415c0-1.323-0.832-2.521-2.071-2.982L18.212,5.068
+				c-1.55-0.577-3.276-0.574-4.822,0.007L2.063,9.328C0.83,9.791,0,10.988,0,12.307c0,1.317,0.83,2.514,2.063,2.976L6.3,16.875
+				l0.009,5.655c0.197,2.99,4.928,4.557,9.499,4.557s9.302-1.564,9.5-4.571l0.008-5.612l3.679-1.371v3.009
+				c-0.545,0.395-0.892,1.165-0.892,2.015c0,1.123,0,2.284,1.699,2.284c1.698,0,1.698-1.161,1.698-2.284
+				C31.503,19.706,31.157,18.935,30.611,18.54z M8.778,17.806l4.612,1.732c1.545,0.582,3.274,0.584,4.825,0.009l4.627-1.725v4.521
+				c0,0.773-2.738,2.257-7.032,2.257c-4.292,0-7.031-1.481-7.031-2.257L8.778,17.806L8.778,17.806z M14.625,16.98L5.168,13.43
+				c-0.085-0.032-0.19-0.068-0.308-0.107c-0.542-0.181-1.552-0.518-1.552-1.014c0-0.506,0.964-0.822,1.539-1.012
+				c0.123-0.04,0.232-0.077,0.321-0.109l9.455-3.553c0.381-0.144,0.78-0.215,1.185-0.215c0.404,0,0.799,0.07,1.177,0.211l9.551,3.556
+				c0.077,0.029,0.172,0.062,0.278,0.096c0.52,0.179,1.603,0.544,1.603,1.026c0,0.194-0.317,0.543-1.882,1.122l-9.549,3.554
+				C16.229,17.267,15.384,17.265,14.625,16.98z"/>
+			</svg>
+		</div>
+		<h3 class="item-title">Lorem ipsum</h3>
+		<p>
+			Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque.
+		</p>
+	</div>
+</div>
+</div>
+<a href="#" class="">Learn more</a>
+</div>
+</section>
+
+<section class="box"> <!-- нз що за блок і як його назвать -->
+	<div class="item-box-1">
+		<div class="wrapper">
+			<div class="dontainer">
+				<div class="row">
+
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"></div>
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+						<h3>Lorem ipsum</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue sed est porttitor, ac blandit nisl posuere. Pellentesque hendrerit suscipit mi eu lobortis. Curabitur consectetur enim id elementum accumsan. Quisque metus purus, iaculis id tincidunt non, blandit quis sapien.
+						</p>
+						<a href="#" class="box-link">Learn more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="item-box-2">
+		<div class="wrapper">
+			<div class="dontainer">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+						<h3>Dolor sit amet</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue sed est porttitor, ac blandit nisl posuere. Pellentesque hendrerit suscipit mi eu lobortis. Curabitur consectetur enim id elementum accumsan. Quisque metus purus, iaculis id tincidunt non, blandit quis sapien.
+						</p>
+						<a href="#" class="box-link">Learn more</a>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+<section class="testimonials">
+	<div class="wrapper">
+
+<!-- ЗРОБИТЬ РОБОЧІ КНОПКИ ВЛІВО ВПРАВО -->
+
+		<div id="myCarousel" class="carousel slide itro-slide" data-ride="carousel">
+				<ol class="carousel-indicators carousel-radio">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+				<li data-target="#myCarousel" data-slide-to="3"></li>
+				<li data-target="#myCarousel" data-slide-to="4"></li>
+			</ol>
+
+				<div class="carousel-inner" role="listbox">
+					<div class="item active inro-template">
+					<img src="img/photo-adam-czajkowski.png" alt="Adam Czajkowski">
+					<div class="carousel-caption">
+						<p><span>Alecto</span> lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<h4><span>Adam Czajkowski</span>, CEO &amp Founder at symu.co</h4>
+					</div>
+				</div>
+
+				<div class="item inro-template">
+					<img src="img/photo-adam-czajkowski.png" alt="Adam Czajkowski">
+					<div class="carousel-caption">
+						<p><span>Alecto</span> lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<h4><span>Adam Czajkowski</span>, CEO &amp Founder at symu.co</h4>
+					</div>
+				</div>
+
+				<div class="item inro-template">
+					<img src="img/photo-adam-czajkowski.png" alt="Adam Czajkowski">
+					<div class="carousel-caption">
+						<p><span>Alecto</span> lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<h4><span>Adam Czajkowski</span>, CEO &amp Founder at symu.co</h4>
+					</div>
+				</div>
+
+				<div class="item inro-template">
+					<img src="img/photo-adam-czajkowski.png" alt="Adam Czajkowski">
+					<div class="carousel-caption">
+						<p><span>Alecto</span> lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<h4><span>Adam Czajkowski</span>, CEO &amp Founder at symu.co</h4>
+					</div>
+				</div>
+
+				<div class="item inro-template">
+					<img src="img/photo-adam-czajkowski.png" alt="Adam Czajkowski">
+					<div class="carousel-caption">
+						<p><span>Alecto</span> lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<h4><span>Adam Czajkowski</span>, CEO &amp Founder at symu.co</h4>
+					</div>
+				</div>
+			</div>
+
+			<a class="left carousel-control" href="#myCarousel"  data-slide="prev">
+					<i class="glyphicon glyphicon-chevron-left" aria-hidden="true"></i>
+				</a>
+				<a class="right carousel-control test" href="#myCarousel"  data-slide="next">
+					<i class="glyphicon glyphicon-chevron-right" aria-hidden="true"></i>
+				</a>
 		</div>
 
-
-<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
+	</div>
+</section>
 
 
-	</section>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="libs/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+
+
+
+<section class="services">
+	<div class="wrapper">
+		<h2>Our Services</h2>
+		<hr>
+		<p>
+			Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque.
+		</p>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-6 col lg-6">
+					<div class="icon-1"></div>
+					<h3>Portfolio</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue sed est porttitor, ac blandit nisl posuere.
+					</p>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col lg-6">
+					<div class="icon-2"></div>
+					<h3>Design</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue sed est porttitor, ac blandit nisl posuere.
+					</p>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col lg-6">
+					<div class="icon-3"></div>
+					<h3>Branding</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue sed est porttitor, ac blandit nisl posuere.
+					</p>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col lg-6">
+					<div class="icon-4"></div>
+					<h3>Development</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue sed est porttitor, ac blandit nisl posuere.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="team">
+	<div class="wrapper">
+		<h2>Meet our team</h2>
+		<hr>
+		<p>
+			Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque.
+		</p>
+		<div class="container team-persons">
+			<div class="row">
+				<div class="col-xs-10 col-sm-10 col-md-4 col-lg-2 item-block"><span></span></div>
+				<div class="col-xs-10 col-sm-10 col-md-4 col-lg-2 item-block"><span></span></div>
+				<div class="col-xs-10 col-sm-10 col-md-4 col-lg-2 item-block"><span></span></div>
+				<div class="col-xs-10 col-sm-10 col-md-4 col-lg-2 item-block"><span></span></div>
+				<div class="col-xs-10 col-sm-10 col-md-4 col-lg-2 item-block"><span></span></div>
+				<div class="col-xs-10 col-sm-10 col-md-4 col-lg-2 item-block"><span></span></div>
+				<div class="col-xs-10 col-sm-10 col-md-4 col-lg-2 item-block"><span></span></div>
+				<div class="col-xs-10 col-sm-10 col-md-4 col-lg-2 item-block"><span></span></div>
+				<div class="col-xs-10 col-sm-10 col-md-4 col-lg-2 item-block"><span></span></div>
+				<div class="col-xs-10 col-sm-10 col-md-4 col-lg-2 item-block"><span></span></div>
+
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="prising">
+	<div class="wrapper">
+		<h2>Pricing</h2>
+		<hr>
+		<p>
+			Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque.
+		</p>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+					<span>$2<span>9</span></span>
+					<p>Lorem ipsum license</p>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipiscing elit Ante sed interdum labortis Est nisi efficitur lactus
+					</p>
+					<a href="#">Purchase</a>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+					<span>$<span>39</span></span>
+					<p>Lorem ipsum license</p>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipiscing elit Ante sed interdum labortis Est nisi efficitur lactus
+					</p>
+					<a href="#">Purchase</a>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+					<span>$<span>49</span></span>
+					<p>Lorem ipsum license</p>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipiscing elit Ante sed interdum labortis Est nisi efficitur lactus
+					</p>
+					<a href="#">Purchase</a>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+					<span>$10<span>9</span></span>
+					<p>Lorem ipsum license</p>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipiscing elit Ante sed interdum labortis Est nisi efficitur lactus
+					</p>
+					<a href="#">Purchase</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="world-map">
+	<div class="wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<h3>Dolor sit amet</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue sed est porttitor, ac blandit nisl posuere. Pellentesque hendrerit suscipit mi eu lobortis. Curabitur consectetur enim id elementum accumsan. Quisque metus purus, iaculis id tincidunt non, blandit quis sapien.
+					</p>
+					<a href="#">Learn more</a>   <!--винести всі такі кнопки в окремий файли-->
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<img src="img/world-map.png" alt="World map">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="freebies">   <!--  і як такого типу блоки то називать? -->
+	<div class="wrapper">
+		<p>
+			Try our <span>PSD template</span> on symu.co
+		</p>
+		<a href="#">symu.co/freebies</a>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="wrapper">
+		<span>All Rights Reserved by Alecto</span>
+		<ul class="bottom-nav">
+			<li>Home</li>
+			<li>About</li>
+			<li>Work</li>
+			<li>Service</li>
+			<li>Blog</li>
+		</ul>
+	</div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="libs/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,21 @@
+section.team {
+	width: 100%;
+	height: 1170px;
+
+	.wrapper {
+		width: 100%;
+	}
+
+	.item-block {
+
+		span {
+			display: block;
+			width: 400px;
+			height: 200px;
+			background: green;
+			border: 2px solid red;
+		}
+	}
+}
+
+

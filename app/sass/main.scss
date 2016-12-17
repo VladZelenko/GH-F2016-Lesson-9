@@ -1,6 +1,10 @@
-@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap";
-
 @import "app/sass/base/index";
+
+@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap";
+// @import "../libs/font-awesome-sass/assets/stylesheets/font-awesome";   чомусь нормально не підключалось і значки не відображались, як це вирішити?
+
+
 @import "app/sass/modules/index";
+
 
 

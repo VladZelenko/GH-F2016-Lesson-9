@@ -1,0 +1,50 @@
+section.about {
+	width: 100%;
+	min-height: 100vh;
+	text-align: center;
+
+	.wrapper {
+		&>h3 {
+			color: $secondary_font_color;
+			font: 200 60px Raleway;
+		}
+	}
+
+	p {
+		color: $secondary_font_color;
+		font: 400 18px/30px ProximaNova;
+		padding: 50px 0 155px 0;
+	}
+}
+
+hr {
+	width: 30px;
+	height: 1px;
+	background: $btn_primary_color;
+}
+
+.item-title {
+	margin-top: 85px;
+	font: 400 30px Raleway;
+}
+
+.about-icon {
+	width: 180px;
+	height: 180px;
+	margin: 0 auto;
+	display: block;
+	background: #edeff1;
+	border-radius: 50%;
+
+}
+
+#rocket-space, #zigzag, #atom, #graduation {
+	fill: #87949e;
+	margin-top: 35%;
+}
+
+.about-icon:hover {
+	background: $btn_primary_color;
+	transition: all .5s ease-in-out;
+}
+

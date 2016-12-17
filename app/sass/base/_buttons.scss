@@ -1,0 +1,39 @@
+.about .wrapper>a {
+	display: block;
+	width: 185px;
+	height: 50px;
+	margin: 0 auto;
+	color: $primary_font_color;
+	font: 700 14px/50px Raleway;
+	background: $btn_primary_color;
+	border-radius: 25px;
+	text-align: center;
+	text-decoration: none;
+
+	&:hover {
+		color: $primary_font_color;
+		text-decoration: none;
+		transform: scale(.9);
+		transition: all .8s;
+	}
+}
+
+.box-link {
+	display: block;
+	width: 185px;
+	height: 50px;
+	color: $primary_font_color;
+	font: 700 14px/50px Raleway;
+	background: $btn_primary_color;
+	border-radius: 25px;
+	text-align: center;
+	text-decoration: none;
+
+	&:hover {
+		color: $primary_font_color;
+		text-decoration: none;
+		transform: scale(.9);
+		transition: all .8s;
+	}
+}
+
