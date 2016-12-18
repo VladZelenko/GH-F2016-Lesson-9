@@ -5907,9 +5907,9 @@ button.close {
     display: none !important; } }
 
 .intro {
-  display: table;
+  background: linear-gradient(to top, rgba(0, 19, 25, 0.8), rgba(0, 19, 25, 0.8)), url("../img/hero.png") no-repeat;
   width: 100%;
-  background: linear-gradient(to top, rgba(0, 19, 25, 0.8), rgba(0, 19, 25, 0.8)), url("../img/hero.png") no-repeat; }
+  min-height: 100vh; }
 
 .top-nav {
   background: none;
@@ -5956,16 +5956,17 @@ button.close {
   font-weight: 100; }
 
 section.about {
-  width: 100%;
   min-height: 100vh;
   text-align: center; }
-  section.about .wrapper > h3 {
-    color: #87949e;
-    font: 200 60px Raleway; }
+  section.about .wrapper {
+    width: 1500px; }
+    section.about .wrapper > h3 {
+      color: #87949e;
+      font: 200 60px Raleway; }
   section.about p {
+    padding-bottom: 155px;
     color: #87949e;
-    font: 400 18px/30px ProximaNova;
-    padding: 50px 0 155px 0; }
+    font: 400 18px/30px ProximaNova; }
 
 hr {
   width: 30px;
@@ -5976,6 +5977,10 @@ hr {
   margin-top: 85px;
   font: 400 30px Raleway; }
 
+.about-col {
+  width: 290px;
+  margin-right: 80px; }
+
 .about-icon {
   width: 180px;
   height: 180px;
@@ -5984,7 +5989,7 @@ hr {
   background: #edeff1;
   border-radius: 50%; }
 
-#rocket-space, #zigzag, #atom, #graduation {
+.about-svg-icon {
   fill: #87949e;
   margin-top: 35%; }
 
@@ -5992,13 +5997,17 @@ hr {
   background: #17daa3;
   transition: all .5s ease-in-out; }
 
+.about-icon:hover .about-svg-icon {
+  fill: #ffffff;
+  transition: all .5s ease-in-out; }
+
 section.box {
   width: 100%;
   min-height: 100vh; }
   section.box .wrapper {
-    width: 1400px; }
+    width: 1470px; }
   section.box h3 {
-    color: #87949e;
+    color: #576671;
     font: 200 60px Raleway; }
   section.box p {
     padding: 70px 0 75px 0;
@@ -6010,10 +6019,10 @@ section.box {
     padding: 165px 0 180px 0; }
 
 section.testimonials {
-  padding: 190px 0 150px 0;
+  padding: 190px 0 75px 0;
   background: url("../../img/photo.png") no-repeat;
   width: 100%;
-  height: 700px;
+  min-height: 700px;
   text-align: center; }
   section.testimonials .item img {
     width: 105px;
@@ -6023,80 +6032,219 @@ section.testimonials {
     top: 0;
     left: 0; }
     section.testimonials .carousel-caption p {
-      font: 300 30px/96px Raleway; }
-    section.testimonials .carousel-caption span {
-      color: #17daa3; }
-    section.testimonials .carousel-caption h4 {
-      font: 300 18px/96px Raleway; }
-      section.testimonials .carousel-caption h4 span {
-        font-weight: 500px; }
-
-.carousel-box {
-  height: 400px; }
+      font: 300 30px Raleway; }
+      section.testimonials .carousel-caption p span {
+        color: #17daa3; }
+  section.testimonials .carousel-box {
+    height: 400px; }
+  section.testimonials .testimonials-message h4 {
+    position: relative;
+    bottom: 50px;
+    padding-bottom: 100px;
+    font: 500 18px Raleway;
+    opacity: 0.3; }
+    section.testimonials .testimonials-message h4 span {
+      font-weight: 300px; }
 
 section.services {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #edeff1; }
   section.services .wrapper {
-    text-align: center; }
+    width: 1500px; }
+    section.services .wrapper h2 {
+      color: #87949e;
+      font: 200 60px Raleway;
+      text-align: center; }
+    section.services .wrapper > p {
+      color: #87949e;
+      font: 400 18px/30px ProximaNova;
+      text-align: center; }
+  section.services .container {
+    width: 100%; }
 
-.icon-1 {
+.icon {
+  float: left;
   display: block;
-  background: url("../../img/portfolio-of-business.svg");
-  width: 49px;
-  height: 50px; }
-
-.icon-2 {
-  display: block;
-  background: url("../../img/pencil.svg");
-  width: 50px;
-  height: 50px; }
-
-.icon-3 {
-  display: block;
-  background: url("../../img/two-layers.svg");
-  width: 50px;
-  height: 50px; }
-
-.icon-4 {
-  display: block;
-  background: url("../../img/rocket-travelling-space-transport.svg");
-  width: 50px;
-  height: 50px; }
-
-.img-box {
-  display: block;
+  margin-top: 20px;
   width: 95px;
   height: 95px;
   background: #ffffff;
-  line-height: 95px;
-  border-radius: 50%; }
+  border-radius: 50%;
+  text-align: center;
+  line-height: 120px; }
+
+.icon-services {
+  width: 32px;
+  height: 32px; }
+
+.item-services {
+  padding-left: 145px; }
+  .item-services h3 {
+    color: #576671;
+    font: 200 60px/95px Raleway;
+    text-align: left; }
+  .item-services p {
+    color: #87949e;
+    font: 400 18px/50px Raleway;
+    text-align: left; }
 
 section.team {
   width: 100%;
-  height: 1170px; }
+  min-height: 100vh;
+  text-align: center; }
   section.team .wrapper {
     width: 100%; }
-  section.team .item-block span {
-    display: block;
+  section.team h2 {
+    color: #576671;
+    font: 200 60px Raleway; }
+  section.team p {
+    color: #87949e;
+    font: 400 18px/30px ProximaNova;
+    padding-bottom: 110px; }
+  section.team .container {
+    width: 100%; }
+
+.block-3d {
+  width: 400px;
+  height: 400px;
+  margin: 0;
+  perspective: 1000px; }
+  .block-3d:hover .rotate {
+    transform: rotateY(180deg); }
+  .block-3d .rotate {
+    position: relative;
+    transition: 0.5s;
+    transform-style: preserve-3d; }
+  .block-3d .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 180px;
+    color: #ffffff;
+    font: 200 36px Raleway; }
+  .block-3d img {
+    transform: rotateY(180deg); }
+  .block-3d img, .block-3d .text {
     width: 400px;
-    height: 200px;
-    background: green;
-    border: 2px solid red; }
+    height: 400px;
+    background: #17daa3;
+    backface-visibility: hidden; }
+
+.pricing {
+  width: 100%;
+  min-height: 100vh;
+  background: #edeff1; }
+  .pricing .wrapper h2 {
+    color: #87949e;
+    font: 200 60px Raleway;
+    text-align: center; }
+  .pricing .wrapper > p {
+    color: #87949e;
+    font: 400 18px/30px ProximaNova;
+    text-align: center; }
+  .pricing .container {
+    width: 100%;
+    margin: 110px auto 0 auto; }
+
+.pricing-col {
+  width: 340px;
+  padding: 0;
+  margin-right: 30px;
+  background: #ffffff; }
+  .pricing-col span {
+    display: block;
+    padding: 55px 0 0 35px;
+    color: #17daa3;
+    font: 200 60px Raleway; }
+  .pricing-col h4 {
+    padding: 30px 0 60px 35px;
+    color: #87949e;
+    font: 400 18px "Proxima Nova"; }
+  .pricing-col hr {
+    width: 100%;
+    background: #000000;
+    opacity: 0.1; }
+  .pricing-col p {
+    padding: 30px 85px 75px 35px;
+    color: #87949e;
+    font: 400 18px/40px "Proxima Nova";
+    text-align: justify; }
+  .pricing-col a {
+    display: block;
+    padding-left: 35px;
+    width: 340px;
+    height: 50px;
+    color: #ffffff;
+    font: 700 18px/50px "Proxima Nova";
+    background: #17daa3;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 5px; }
+  .pricing-col .fa-shopping-cart {
+    float: right;
+    padding-right: 35px;
+    line-height: 50px; }
+
+.world-map {
+  width: 100%;
+  min-height: 760px; }
+  .world-map .wrapper {
+    padding: 120px 0 110px 0;
+    width: 100%; }
+  .world-map .contaoner {
+    width: 100%; }
+  .world-map .world-map-col {
+    width: 50%; }
+    .world-map .world-map-col h3 {
+      color: #576671;
+      font: 200 60px Raleway; }
+    .world-map .world-map-col p {
+      padding: 85px 55px 75px 0;
+      color: #87949e;
+      font: 400 18px/36px "Proxima Nova"; }
 
 section.freebies {
   width: 100%;
-  height: 760px;
-  background: url("../../img/try-our-template.png"); }
+  min-height: 760px;
+  background: url("../../img/try-our-template.png") no-repeat; }
   section.freebies .wrapper {
     width: 50%;
-    margin: 0 auto;
+    padding: 255px 0 270px 0;
     text-align: center; }
+    section.freebies .wrapper p {
+      padding-bottom: 100px;
+      color: #ffffff;
+      font: 200 60px Raleway; }
+    section.freebies .wrapper span {
+      font-weight: 700; }
+  section.freebies .box-link-freebies {
+    display: block;
+    width: 185px;
+    height: 50px;
+    margin: 0 auto;
+    color: #ffffff;
+    font: 700 14px/50px Raleway;
+    background: #17daa3;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none; }
 
 footer.footer {
   width: 100%;
   height: 760px;
   background: url("../../img/vector-smart-object-copy.png") top center no-repeat; }
   footer.footer .wrapper {
-    width: 75%; }
+    width: 75%;
+    padding-top: 70px; }
+    footer.footer .wrapper img {
+      padding-right: 20px; }
+  footer.footer .bottom-nav {
+    float: right; }
+  footer.footer .bottom-nav li {
+    display: inline-block; }
+    footer.footer .bottom-nav li a {
+      display: block;
+      padding-right: 50px;
+      color: #87949e;
+      font: 400 18px "Proxima Nova"; }

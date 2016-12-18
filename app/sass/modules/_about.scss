@@ -1,9 +1,9 @@
 section.about {
-	width: 100%;
 	min-height: 100vh;
 	text-align: center;
 
 	.wrapper {
+		width: 1500px;
 		&>h3 {
 			color: $secondary_font_color;
 			font: 200 60px Raleway;
@@ -11,9 +11,9 @@ section.about {
 	}
 
 	p {
+		padding-bottom: 155px;
 		color: $secondary_font_color;
 		font: 400 18px/30px ProximaNova;
-		padding: 50px 0 155px 0;
 	}
 }
 
@@ -28,6 +28,11 @@ hr {
 	font: 400 30px Raleway;
 }
 
+.about-col {
+	width: 290px;
+	margin-right: 80px;
+}
+
 .about-icon {
 	width: 180px;
 	height: 180px;
@@ -38,13 +43,17 @@ hr {
 
 }
 
-#rocket-space, #zigzag, #atom, #graduation {
-	fill: #87949e;
+.about-svg-icon {
+	fill: $secondary_font_color;
 	margin-top: 35%;
 }
 
-.about-icon:hover {
+.about-icon:hover  {
 	background: $btn_primary_color;
 	transition: all .5s ease-in-out;
 }
 
+.about-icon:hover .about-svg-icon {
+	fill: $primary_font_color;
+	transition: all .5s ease-in-out;
+}

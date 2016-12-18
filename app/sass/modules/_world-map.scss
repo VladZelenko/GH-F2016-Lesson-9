@@ -1,0 +1,28 @@
+.world-map {
+	width: 100%;
+	min-height: 760px;
+
+	.wrapper {
+		padding: 120px 0 110px 0;
+		width: 100%;
+	}
+
+	.contaoner {
+		width: 100%;
+	}
+
+	.world-map-col {
+		width: 50%;
+		 h3 {
+		 	color: $h_primary_font_color;
+		 	font: 200 60px Raleway;
+		 }
+
+		 p {
+		 	padding: 85px 55px 75px 0;
+		 	color: $secondary_font_color;
+		 	font: 400 18px/36px "Proxima Nova";;
+		 }
+	}
+
+}

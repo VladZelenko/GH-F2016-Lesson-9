@@ -4,5 +4,25 @@ footer.footer {
 	background: url("../../img/vector-smart-object-copy.png") top center no-repeat;
 	.wrapper {
 		width: 75%;
+		padding-top: 70px;
+
+		img {
+			padding-right: 20px;
+		}
 	}
-}
+
+	.bottom-nav  {
+		float: right;
+	}
+
+	.bottom-nav li {
+		display: inline-block;
+
+		a {
+			display: block;
+			padding-right: 50px;
+			color: $secondary_font_color;
+			font: 400 18px "Proxima Nova";
+		}
+	}
+	}
