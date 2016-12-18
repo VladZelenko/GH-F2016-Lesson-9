@@ -9,11 +9,17 @@
 	background: none;
 	border: none;
 }
-// .test li a{
-// 		color: $primary_font_color;
-// 		font: 700 14px Raleway;
-// 		text-transform: uppercase;
-// 	}
+
+h1.logo {
+	padding-top: 20px;
+}
+
+#myNavbar .menu-box li a{
+	padding-top: 65px;
+	color: $primary_font_color;
+	font: 700 14px Raleway;
+	text-transform: uppercase;
+}
 
 .inro-template {
 	display: table;
@@ -33,7 +39,7 @@
 	p {
 		padding-bottom: 65px;
 		color: $primary_font_color;
-		font: 300 24px ProximaNova;
+		font: 300 24px "Proxima Nova";
 	}
 
 	a {
@@ -56,14 +62,18 @@
 	}
 }
 
-.test {
-	background: linear-gradient(none);
-}
-
 .glyphicon-chevron-down {
 	margin: 0 auto;
-	color: red;
-	width: 100px;
+	color: $btn_secondary_color;
+	width: 30px;
+	height: 15px;
 	font-size: 25px;
 	font-weight: 100;
+}
+
+.scroll-down {
+	position: absolute;
+	left: 50%;
+	bottom: 60px;
+	transform: translate(-50%, -50%);
 }

@@ -5915,6 +5915,15 @@ button.close {
   background: none;
   border: none; }
 
+h1.logo {
+  padding-top: 20px; }
+
+#myNavbar .menu-box li a {
+  padding-top: 65px;
+  color: #ffffff;
+  font: 700 14px Raleway;
+  text-transform: uppercase; }
+
 .inro-template {
   display: table;
   width: 100%;
@@ -5928,7 +5937,7 @@ button.close {
   .inro-template p {
     padding-bottom: 65px;
     color: #ffffff;
-    font: 300 24px ProximaNova; }
+    font: 300 24px "Proxima Nova"; }
   .inro-template a {
     margin: 0 auto;
     display: block;
@@ -5945,15 +5954,19 @@ button.close {
       transition: all 1s ease-in-out;
       border: none; }
 
-.test {
-  background: linear-gradient(none); }
-
 .glyphicon-chevron-down {
   margin: 0 auto;
-  color: red;
-  width: 100px;
+  color: #ffffff;
+  width: 30px;
+  height: 15px;
   font-size: 25px;
   font-weight: 100; }
+
+.scroll-down {
+  position: absolute;
+  left: 50%;
+  bottom: 60px;
+  transform: translate(-50%, -50%); }
 
 section.about {
   min-height: 100vh;
@@ -6229,6 +6242,11 @@ section.freebies {
     border-radius: 25px;
     text-align: center;
     text-decoration: none; }
+    section.freebies .box-link-freebies:hover {
+      color: #ffffff;
+      text-decoration: none;
+      transform: scale(0.9);
+      transition: all .8s; }
 
 footer.footer {
   width: 100%;

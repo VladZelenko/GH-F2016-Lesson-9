@@ -30,5 +30,12 @@ section.freebies {
 	border-radius: 25px;
 	text-align: center;
 	text-decoration: none;
+
+		&:hover {
+		color: $primary_font_color;
+		text-decoration: none;
+		transform: scale(.9);
+		transition: all .8s;
+	}
 }
 }
